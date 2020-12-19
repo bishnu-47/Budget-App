@@ -19,7 +19,13 @@ store.dispatch(addExpense({
 }))
 store.dispatch(addExpense({
   description: "gas bill",
-  amount: 1000
+  amount: 1000,
+  createdAt: 1000
+}))
+store.dispatch(addExpense({
+  description: "eletric bill",
+  amount: 700,
+  createdAt: 2000
 }))
 
 store.dispatch(setTextFilter("bill"))
