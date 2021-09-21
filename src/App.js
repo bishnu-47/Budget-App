@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Balance from "./components/Balance";
 import IncomeExpenses from "./components/IncomeExpenses";
 import TransactionList from "./components/TransactionList";
-import Form from "./components/Form";
+import AddAmount from "./components/AddAmount";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
         <Balance />
         <IncomeExpenses />
         <TransactionList />
-        <Form />
+        <AddAmount />
       </div>
     </div>
   );
