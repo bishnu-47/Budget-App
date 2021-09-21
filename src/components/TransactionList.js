@@ -5,7 +5,6 @@ import { GlobalContext } from "../store/GlobalState";
 
 export default function TransactionList() {
   const { transactions } = useContext(GlobalContext);
-  console.log(transactions);
 
   return (
     <>
