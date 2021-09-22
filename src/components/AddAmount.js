@@ -9,7 +9,6 @@ export default function AddAmount() {
   function onSubmitHandler(e) {
     e.preventDefault();
     const newTransaction = {
-      id: new Date(),
       text: title,
       amount: Number(amount),
     };

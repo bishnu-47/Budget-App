@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../store/GlobalState";
+import { convertToCommaSeperatedCurrency } from "../utils/format";
 
 export default function Balance() {
   const { transactions } = useContext(GlobalContext);
@@ -12,7 +13,7 @@ export default function Balance() {
   return (
     <>
       <h4>Your Balance</h4>
-      <h1>₹{balance.toFixed(2)}</h1>
+      <h1>₹{convertToCommaSeperatedCurrency(balance)}</h1>
     </>
   );
 }

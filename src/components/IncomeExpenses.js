@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../store/GlobalState";
+import { convertToCommaSeperatedCurrency } from "../utils/format";
 
 export default function IncomeExpenses() {
   const { transactions } = useContext(GlobalContext);
@@ -15,11 +16,15 @@ export default function IncomeExpenses() {
       <div className="inc-exp-container">
         <div>
           <h4>Income</h4>
-          <p className="money plus">+₹{income.toFixed(2)}</p>
+          <p className="money plus">
+            +₹{convertToCommaSeperatedCurrency(income)}
+          </p>
         </div>
         <div>
           <h4>Expense</h4>
-          <p className="money minus">-₹{expense.toFixed(2)}</p>
+          <p className="money minus">
+            -₹{convertToCommaSeperatedCurrency(expense)}
+          </p>
         </div>
       </div>
     </>
